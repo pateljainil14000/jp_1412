@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advance search</title>
+        <style>
+             h1{
+            font-family:sans-serif;
+            font-size: 30px;
+            margin-left: 30px;
+        }
+        .blue{
+            color:blue;
+        
+        }
+        .red{
+            color:red;
+        }
+        .yellow{
+            color:yellow;
+        }
+        .green{
+            color:olive;
+        }
+        .advanced_search{
+            margin:50px;
+        }
+        .f{
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        .row{
+            margin:20px auto;
+            display: grid;
+            grid-template-columns: 150px 500px;
+        }
+        .advanced_search{
+            display:grid;
+            margin-left: 50px;
+            
+        }
+        input{
+            height:25px;
+        }
+        #button{
+            background-color: blue;
+            color: white;
+            border-radius: 50px;
+            float:right;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        #button:hover{
+           background-color:darkblue;
+        }
+        .back{
+             color:blue; 
+             text-align: right;
+              margin: 20px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="back">
+    <a href="index.html">Go Back</a>
+    </div>
+        <h1> <span class="blue">G</span>
+        <span class="red">O</span>
+        <span class="yellow">O</span>
+        <span class="blue">G</span>
+    <span class="green">L</span>
+<span class="red">E</span></h1>
+<div class="advanced_search">
+        <h2>Advanced Search</h2>
+        <div class="f">Find pages with</div>
+        <form action="https://www.google.com/search">
+
+       <div class="row">
+        <label>All of these words:</label>
+        <input id="q" type="text" name="as_q">
+        </div> 
+        <div class="row"> 
+            <label>This exact word or phrase:</label>
+            <input id="epq" type="text" name="as_epq">
+        </div>
+        <div class="row">
+            <label>none of these words</label>
+            <input id="oq" type="text" name="as_eq">
+        </div>
+        <div class="row">
+            <label>Site or domain</label>
+            <input id="eq" type="text" name="as_sitesearch">
+        </div>
+        
+            <input id="button" type="submit" value="Advanced Search">
+           
+         </form>
+        </div>
+    </body>
+</html>

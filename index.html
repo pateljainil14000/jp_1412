@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+           h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 50px;
+        }
+        .blue{
+            color:blue;
+        
+        }
+        .red{
+            color:red;
+        }
+        .yellow{
+            color:yellow;
+        }
+        .green{
+            color:olive;
+        }
+            .container{
+                 text-align: center;
+            }
+            .main{
+                height: 50px;
+                width:500px;
+             border-radius: 50px;
+             display: grid;
+            }
+            #txtbox{
+                margin:auto;
+            }
+            #submit{
+                display:block;
+                margin:20px auto;
+                width:250px;
+                
+            }
+            #lucky{
+                display:block;
+                margin:20px auto;
+                width:250px;
+            }
+            .link{
+                color:blue;
+                text-align: right;
+                margin: 20px;
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="link">
+            <a href="Imagesearch.html">Image search</a>
+            <a href="advancesearch.html">Advanced search</a>
+        </div>
+        <div class="container">
+        <h1> <span class="blue">G</span>
+        <span class="red">O</span>
+        <span class="yellow">O</span>
+        <span class="blue">G</span>
+    <span class="green">L</span>
+<span class="red">E</span></h1>
+
+        <form action="https://www.google.com/search">
+            <input class="main" id="txtbox" type="text" text-align="centered" name="q" placeholder="Type Anything You want to Search on GOOGLE" >
+            <input class="main" id="submit" type="submit" value="Google Search" >
+             <input type="hidden" id="custId" name="custId" value="3487">
+             <input type="submit" class="main" id="lucky" name="btnI" value="I'm Feeling Lucky">
+        </form>
+        </div>
+    </body>
+</html>
